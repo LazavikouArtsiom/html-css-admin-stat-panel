@@ -44,6 +44,18 @@ p{
     line-height: 1.429;
 }
 
+.fw-b{
+    font-weight: bold;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}
+
 .lg-box{
     width: 324px;
     height: 292px;
@@ -90,8 +102,24 @@ p{
     height: 212px;
 }
 
+.bor-t{
+    border-top: .2px solid #e8e8e8;
+}
+
 .bor-b{
     border-bottom: .2px solid #e8e8e8 ;
+}
+
+.bor-r{
+    border-right: .2px solid #e8e8e8 ;
+}
+
+.b-0{
+    bottom: 0;
+}
+
+.r-0{
+    right: 0;
 }
 
 .fd-c{
@@ -118,6 +146,10 @@ p{
     margin-top: 49px;
 }
 
+.mt-25{
+    margin-top: 25px;
+}
+
 .mt-5{
     margin-top: 5px;
 }
@@ -127,12 +159,16 @@ p{
     margin-top: 2px;
 }
 
+.mt-25{
+    margin-top: 25px;
+}
+
 .mt-20{
     margin-top: 20px;
 }
 
 
-.mt-20{
+.mt-14{
     margin-top: 14px;
 }
 
@@ -153,6 +189,11 @@ p{
     margin-bottom: 20px;
 }
 
+.mb-25{
+    margin-bottom: 25px;
+}
+
+
 .mb-4{
     margin-bottom: 4px;
 }
@@ -170,10 +211,13 @@ p{
     margin-right: 30px;
 }
 
+.mr-50{
+    margin-right: 50px;
+}
+
 .mr-8{
     margin-right: 8px;
 }
-
 
 .ml-4{
     margin-left: 4px;
@@ -183,8 +227,26 @@ p{
     margin-left: 10px;
 }
 
+
+.ml-13{
+    margin-left: 13px;
+}
+
+.ml-14{
+    margin-left: 14px;
+}
+
+.ml-50{
+    margin-left: 50px;
+}
+
+
 .pb-10{
     padding-bottom: 10px;
+}
+
+.pb-20{
+    padding-bottom: 20px;
 }
 
 .pt-10{
@@ -203,6 +265,10 @@ p{
     justify-content: space-between;
 }
 
+.jc-sa{
+    justify-content: space-around;
+}
+
 .jc-fe{
     justify-content: flex-end;
 }
@@ -217,6 +283,10 @@ p{
 
 .ai-c{
     align-items: center;
+}
+
+.ai-sa{
+    align-items: space-around;
 }
 
 .orange{
@@ -246,6 +316,15 @@ p{
 .light-gray{
     color: #e8e8e8;
 }
+
+.footer-light-gray{
+    color: #c7c6c7;
+}
+
+.footer-dark-gray{
+    color: #827985;
+}
+
 
 .dark-orange{
     color: #d39f15;
@@ -305,7 +384,6 @@ p{
     left: 11px;
 }
 
-
 .nav{
     width: 14%;
 }
@@ -315,7 +393,8 @@ p{
     height: 6px;
     border-radius: 50%;
     border: 3px solid;
-    border-color: black;
+    border-color: rgb(28, 26, 29);
+
 }
 
 .menu-white{
@@ -327,8 +406,7 @@ p{
 }
 
 .plus{
-    width: 6px;
-    height: 6px;
+    font-size: 9px;
 }
 
 .userpic{
@@ -408,8 +486,26 @@ p{
     background-size: cover;
 }
 
+.library .top{
+    padding-bottom: 10px;
+    border-bottom: .2px solid #535053 ;
+}
+
+.library .bot{
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+.library .bot img{
+    width: 81px;
+    height: 76px;
+    padding: 0;
+    margin: 0;
+}
+
 .last-post{
     position: relative;
+    border-radius: 3px;
 }
 
 .last-post .menu-white{
@@ -420,11 +516,34 @@ p{
 
 
 .post-list{
-    top: 0;
     width: 50%;
     height: 100%;
     background:white;
+    display: flex;
 }
+
+.post-list .posts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-list .title{
+    padding: 15px 10px;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.post-list .title:hover{
+  background-color: #2249e4;
+  color: #fff;
+}
+
+
 
 .post-detail{
     width: 50%;
@@ -481,4 +600,64 @@ p{
   
 .mockup .stats i{
     font-size: 8px;    
+}
+
+.posts-counter{
+    width: 50%;
+}
+
+.pages-counter{
+    width: 50%;
+}
+
+.counter .posts-counter .plus{
+    margin-bottom: 10px;
+}
+
+.browsers-stats img{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 4px;
+}
+
+.browser-stats-row{
+    height: 50%;
+}
+
+.browsers-stats{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.browser-stat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.order-stat .stat-bar{
+    width: 15px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #1bdddb;
+}
+
+
+.order-stat p{
+    margin-bottom: 3px;
+}
+
+.footer{
+    height: 150px;
+    max-width: 1365px;
+}
+
+.footer .logo img{
+    height: 50px;
+    width: 100px;
 }
