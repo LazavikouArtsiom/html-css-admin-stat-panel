@@ -6,6 +6,7 @@ body{
     background-color: #1c1a1d;
 }
 
+
 h1{
 
 }
@@ -39,7 +40,15 @@ h6{
     font-size: 9px;
     font-family: "Montserrat";
     color: rgba(255, 255, 255, 0.502);
+
 } 
+
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.502);
+
+}
 
 .nav h6{
     font-size: 12px;
@@ -736,3 +745,43 @@ p{
     height: 64px;
     background-size: cover;
 }
+
+@media (max-width: 800px) {
+    .container>.top {display: flex; flex-direction: column; align-items: center;}
+    
+    .nav{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+    .nav div{
+        margin-right: 23px;
+    }
+
+    
+    .nav h4{
+        margin-right: 23px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .logo{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer .logo img{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .table{
+        margin: 0;
+    }
+
+
+  }
+
