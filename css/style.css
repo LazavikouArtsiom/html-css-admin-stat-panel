@@ -41,11 +41,41 @@ h6{
     color: rgba(255, 255, 255, 0.502);
 } 
 
+.nav h6{
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgb(136, 127, 140);
+    line-height: 2.222;
+}
+  
+.nav h4{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(219, 216, 220);
+    line-height: 2.111;
+}
+
+.nav i{
+    font-size: 14px;
+    color: rgb(136, 127, 140);
+    line-height: 2.111;
+}
+
+.nav .large-plus img{
+    height: 30px;
+    width: 30px;
+}
+  
   
 p{
     font-family: 'PT Sans', sans-serif;
     font-size: 10px;
     line-height: 1.429;
+}
+
+.nav{
+    width: 162px;
+    height: 888px;
 }
 
 .fw-b{
@@ -54,6 +84,9 @@ p{
 
 .w-100{
     width: 100%;
+}
+.vh-100{
+    height: 100vh;
 }
 
 .h-100{
@@ -190,7 +223,7 @@ p{
 }
 
 .mb-20{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .mb-25{
@@ -216,7 +249,7 @@ p{
 }
 
 .mr-50{
-    margin-right: 50px;
+    margin-right: 15px;
 }
 
 .mr-8{
@@ -230,7 +263,6 @@ p{
 .ml-10{
     margin-left: 10px;
 }
-
 
 .ml-13{
     margin-left: 13px;
@@ -255,6 +287,10 @@ p{
 
 .pt-10{
     padding-top: 10px;
+}
+
+.prl-30{
+    padding: 0 80px;
 }
 
 .br-1{
@@ -386,10 +422,6 @@ p{
     padding: 5px 3px;
     top: 11px;
     left: 11px;
-}
-
-.nav{
-    width: 14%;
 }
 
 .menu{
@@ -658,10 +690,49 @@ p{
 
 .footer{
     height: 150px;
-    max-width: 1365px;
 }
 
 .footer .logo img{
     height: 50px;
     width: 100px;
+    margin-left: 30px;
+}
+
+.calendar{
+    background: url("../img/Calendar.png");
+    background-size: cover;
+}
+
+.name{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+.visits{
+    background: url("../img/visits-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.notification-item img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.notif img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.notif{
+    align-items: center;
+    padding: 15px 0;
+}
+
+.new-asset{
+    height: 64px;
+    background-size: cover;
 }
